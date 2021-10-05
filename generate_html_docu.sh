@@ -1,4 +1,4 @@
-#!/bin/sh -ex
+#!/bin/bash -ex
 # $1: optional commit message string
 
 # update source code to newest master:
@@ -20,7 +20,7 @@ git status
 commit_message="$1"
 if [ -n "$commit_message" ]; then
     echo "argument \$1='$commit_message' interpreted as commit message"
-    read -p 'are you sure you want to realase changes (y/n)? ' is_release
+    read -r -p 'are you sure you want to commit and realase all changes to docs/? (y/n) ' is_release
     if [ "$is_release" = "y" ]; then
         git add docs/
         git commit -m "$commit_message"
