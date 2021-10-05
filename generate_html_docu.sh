@@ -1,4 +1,5 @@
 #!/bin/sh -ex
+# $1: optional commit message string
 
 # update source code to newest master:
 git submodule foreach git pull origin master
@@ -15,11 +16,17 @@ mv tmp/_config.yml docs/ && rmdir tmp/ # 'stash pop'
 rm -r build/
 git status
 
-# release changes to github
-is_release="false"
-commit_message="update docs"
-if [ "$is_release" = "true" ]; then
-    git add docs/
-    git commit -m "$commit_message"
-    git push
+# release changes to github if $1 is set
+commit_message="$1"
+if [ -n "$commit_message" ]; then
+    echo "argument \$1='$commit_message' interpreted as commit message"
+    read -p 'are you sure you want to realase changes (y/n)? ' is_release
+    if [ "$is_release" = "y" ]; then
+        git add docs/
+        git commit -m "$commit_message"
+        git push
+    else
+        echo "aborting release..."
+    fi
+
 fi
