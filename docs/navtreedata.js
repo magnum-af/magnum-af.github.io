@@ -28,20 +28,21 @@ var NAVTREE =
     [ "magnum.af: A finite differences GPU-accelerated micromagnetic and atomistic simulation software", "index.html", [
       [ "Physical Methods", "index.html#autotoc_md0", null ],
       [ "Architecture", "index.html#autotoc_md1", null ],
-      [ "Example Scripts", "index.html#autotoc_md2", null ],
+      [ "Repositories", "index.html#autotoc_md2", null ],
       [ "Documentation", "index.html#autotoc_md3", null ],
-      [ "Installation Guide", "index.html#autotoc_md4", [
-        [ "Docker:", "index.html#autotoc_md5", null ],
-        [ "Local installation:", "index.html#autotoc_md6", [
-          [ "GPU Driver Installation", "index.html#autotoc_md7", [
-            [ "a) NVIDIA: nvidia-driver and CUDA:", "index.html#autotoc_md8", null ],
-            [ "b) AMD: AMDGPU driver and OpenCL", "index.html#autotoc_md9", null ]
+      [ "Example Simulation Scripts", "index.html#autotoc_md4", null ],
+      [ "Installation Guide", "index.html#autotoc_md5", [
+        [ "Docker:", "index.html#autotoc_md6", null ],
+        [ "Local installation:", "index.html#autotoc_md7", [
+          [ "GPU Driver Installation", "index.html#autotoc_md8", [
+            [ "a) NVIDIA: nvidia-driver and CUDA:", "index.html#autotoc_md9", null ],
+            [ "b) AMD: AMDGPU driver and OpenCL", "index.html#autotoc_md10", null ]
           ] ],
-          [ "Further steps", "index.html#autotoc_md10", [
-            [ "Install Arrayfire", "index.html#autotoc_md11", null ],
-            [ "Install dependencies", "index.html#autotoc_md12", null ],
-            [ "Install Python Packages", "index.html#autotoc_md13", null ],
-            [ "Build magnum.af", "index.html#autotoc_md14", null ]
+          [ "Further steps", "index.html#autotoc_md11", [
+            [ "Install Arrayfire", "index.html#autotoc_md12", null ],
+            [ "Install dependencies", "index.html#autotoc_md13", null ],
+            [ "Install Python Packages", "index.html#autotoc_md14", null ],
+            [ "Build magnum.af", "index.html#autotoc_md15", null ]
           ] ]
         ] ]
       ] ]
@@ -77,7 +78,7 @@ var NAVTREEINDEX =
 "adaptive__runge__kutta_8hpp_source.html",
 "classmagnumaf_1_1State.html#aef1faa05ab98bdef5de588efba05b68d",
 "classmagnumafpy_1_1SparseExchangeField.html#ad00fadbd9ef23387205b3ce45e23caaa",
-"namespacemagnumaf.html#aabb3033e41ed9e40f132a1c15fcfa11a"
+"namespacemagnumaf.html#aa47d57f1c1f9d109038351fcb2711af5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
