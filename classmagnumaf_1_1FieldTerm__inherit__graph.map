@@ -1,0 +1,27 @@
+<map id="magnumaf::FieldTerm" name="magnumaf::FieldTerm">
+<area shape="rect" id="node1" title=" " alt="" coords="5,406,168,433"/>
+<area shape="rect" id="node2" href="$classmagnumaf_1_1AtomTerm.html" title=" " alt="" coords="226,130,393,157"/>
+<area shape="rect" id="node7" href="$classmagnumaf_1_1ExternalField.html" title=" " alt="" coords="217,346,401,373"/>
+<area shape="rect" id="node9" href="$classmagnumaf_1_1MicroTerm.html" title=" " alt="" coords="225,577,393,603"/>
+<area shape="rect" id="node21" href="$classmagnumaf_1_1NonequiTerm.html" title=" " alt="" coords="216,1010,403,1037"/>
+<area shape="rect" id="node3" href="$classmagnumaf_1_1AtomisticDipoleDipoleField.html" title=" " alt="" coords="464,5,668,47"/>
+<area shape="rect" id="node4" href="$classmagnumaf_1_1AtomisticDmiField.html" title=" " alt="" coords="457,71,675,98"/>
+<area shape="rect" id="node5" href="$classmagnumaf_1_1AtomisticExchangeField.html" title=" " alt="" coords="453,123,679,164"/>
+<area shape="rect" id="node6" href="$classmagnumaf_1_1AtomisticUniaxialAnisotropyField.html" title=" " alt="" coords="458,188,674,229"/>
+<area shape="rect" id="node8" href="$classmagnumaf_1_1AtomisticExternalField.html" title=" " alt="" coords="458,253,674,295"/>
+<area shape="rect" id="node10" href="$classmagnumaf_1_1BulkDMIExchangeField.html" title="Combined bulk DMI and exchange Field." alt="" coords="457,319,675,360"/>
+<area shape="rect" id="node11" href="$classmagnumaf_1_1CubicAnisotropyField.html" title=" " alt="" coords="463,384,669,425"/>
+<area shape="rect" id="node12" href="$classmagnumaf_1_1DemagField.html" title=" " alt="" coords="477,450,655,477"/>
+<area shape="rect" id="node13" href="$classmagnumaf_1_1DemagFieldPBC.html" title=" " alt="" coords="465,501,667,527"/>
+<area shape="rect" id="node14" href="$classmagnumaf_1_1DmiField.html" title=" " alt="" coords="487,551,645,578"/>
+<area shape="rect" id="node15" href="$classmagnumaf_1_1ExchangeField.html" title=" " alt="" coords="469,602,663,629"/>
+<area shape="rect" id="node16" href="$classmagnumaf_1_1ExchangeFieldPBC.html" title=" " alt="" coords="457,653,675,679"/>
+<area shape="rect" id="node17" href="$classmagnumaf_1_1RKKYExchangeField.html" title="Combined Field for RKKY interaction between z&#45;neighbour&#45;cells and exchange interaction between not&#45;RK..." alt="" coords="452,703,680,730"/>
+<area shape="rect" id="node18" href="$classmagnumaf_1_1SparseExchangeField.html" title=" " alt="" coords="463,755,669,796"/>
+<area shape="rect" id="node19" href="$classmagnumaf_1_1SpinTransferTorqueField.html" title="Slonczewski Spin Transfer Torque model." alt="" coords="454,820,678,861"/>
+<area shape="rect" id="node20" href="$classmagnumaf_1_1UniaxialAnisotropyField.html" title=" " alt="" coords="454,885,678,927"/>
+<area shape="rect" id="node22" href="$classmagnumaf_1_1NonequiDemagField.html" title=" " alt="" coords="451,951,681,978"/>
+<area shape="rect" id="node23" href="$classmagnumaf_1_1NonequiExchangeField.html" title="Nonequispaced Exchange Field." alt="" coords="457,1003,675,1044"/>
+<area shape="rect" id="node24" href="$classmagnumaf_1_1NonequiExternalField.html" title=" " alt="" coords="462,1068,670,1109"/>
+<area shape="rect" id="node25" href="$classmagnumaf_1_1NonequiUniaxialAnisotropyField.html" title=" " alt="" coords="462,1133,670,1175"/>
+</map>

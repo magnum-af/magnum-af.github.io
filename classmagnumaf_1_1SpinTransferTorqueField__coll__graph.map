@@ -1,0 +1,5 @@
+<map id="magnumaf::SpinTransferTorqueField" name="magnumaf::SpinTransferTorqueField">
+<area shape="rect" id="node1" title="Slonczewski Spin Transfer Torque model." alt="" coords="5,155,229,196"/>
+<area shape="rect" id="node2" href="$classmagnumaf_1_1MicroTerm.html" title=" " alt="" coords="33,80,201,107"/>
+<area shape="rect" id="node3" href="$classmagnumaf_1_1FieldTerm.html" title=" " alt="" coords="36,5,199,32"/>
+</map>

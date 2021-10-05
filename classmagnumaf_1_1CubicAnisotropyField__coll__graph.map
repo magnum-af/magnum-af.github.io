@@ -1,0 +1,7 @@
+<map id="magnumaf::CubicAnisotropyField" name="magnumaf::CubicAnisotropyField">
+<area shape="rect" id="node1" title=" " alt="" coords="493,62,700,103"/>
+<area shape="rect" id="node2" href="$classmagnumaf_1_1MicroTerm.html" title=" " alt="" coords="233,5,401,32"/>
+<area shape="rect" id="node3" href="$classmagnumaf_1_1FieldTerm.html" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node4" href="$classmagnumaf_1_1util_1_1DoubleOrArray.html" title="Class for handling a variable/value which is either a double or an af::array of size [nx,..." alt="" coords="221,62,412,103"/>
+<area shape="rect" id="node5" href="$structmagnumaf_1_1util_1_1UnitVectorOrArray.html" title="Wrapper for a unit vector either of type std::array&lt;double, 3&gt; or af::array dims [nx,..." alt="" coords="217,137,416,178"/>
+</map>
