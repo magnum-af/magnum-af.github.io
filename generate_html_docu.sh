@@ -14,19 +14,22 @@ mv tmp/_config.yml docs/ && rmdir tmp/ # 'stash pop'
 
 # cleanup and info
 rm -r build/
-git status
 
 # release changes to github if $1 is set
 commit_message="$1"
 if [ -n "$commit_message" ]; then
     echo "argument \$1='$commit_message' interpreted as commit message"
+    git add -u
+    git add docs/
+    git status
     read -r -p 'are you sure you want to commit and realase all changes to docs/? (y/n) ' is_release
     if [ "$is_release" = "y" ]; then
-        git add docs/
         git commit -m "$commit_message"
         git push
     else
         echo "aborting release..."
     fi
 
+else
+    git status
 fi
