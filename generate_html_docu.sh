@@ -22,7 +22,7 @@ if [ -n "$commit_message" ]; then
     git add -u
     git add docs/
     git status
-    read -r -p 'are you sure you want to commit and realase all changes to docs/? (y/n) ' is_release
+    read -r -p 'are you sure you want to commit and push all changes listed above? (y/n) ' is_release
     if [ "$is_release" = "y" ]; then
         git commit -m "$commit_message"
         git push
