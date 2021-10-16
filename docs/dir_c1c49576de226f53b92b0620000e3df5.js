@@ -4,6 +4,7 @@ var dir_c1c49576de226f53b92b0620000e3df5 =
     [ "cubic_anisotropy_field.hpp", "cubic__anisotropy__field_8hpp_source.html", null ],
     [ "demag_field.hpp", "demag__field_8hpp_source.html", null ],
     [ "demag_field_pbc.hpp", "demag__field__pbc_8hpp_source.html", null ],
+    [ "dmi_d2d_field.hpp", "dmi__d2d__field_8hpp_source.html", null ],
     [ "dmi_field.hpp", "dmi__field_8hpp_source.html", null ],
     [ "exchange_field.hpp", "exchange__field_8hpp_source.html", null ],
     [ "exchange_field_pbc.hpp", "exchange__field__pbc_8hpp_source.html", null ],

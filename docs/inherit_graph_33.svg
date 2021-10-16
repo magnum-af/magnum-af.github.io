@@ -8,9 +8,9 @@
  viewBox="0.00 0.00 235.00 77.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 73.5)">
 <title>Graphical Class Hierarchy</title>
-<!-- Node82 -->
+<!-- Node84 -->
 <g id="node1" class="node">
-<title>Node82</title>
+<title>Node84</title>
 <g id="a_node1"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="0,-28 0,-47 47,-47 47,-28 0,-28"/>
 <text text-anchor="middle" x="23.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">object</text>
@@ -26,15 +26,15 @@
 </a>
 </g>
 </g>
-<!-- Node82&#45;&gt;Node0 -->
+<!-- Node84&#45;&gt;Node0 -->
 <g id="edge1" class="edge">
-<title>Node82&#45;&gt;Node0</title>
+<title>Node84&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M56.95,-43.01C69.4,-45.13 84,-47.61 98.03,-49.99"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="57.5,-39.56 47.06,-41.33 56.33,-46.46 57.5,-39.56"/>
 </g>
-<!-- Node84 -->
+<!-- Node86 -->
 <g id="node3" class="node">
-<title>Node84</title>
+<title>Node86</title>
 <g id="a_node3"><a xlink:href="classmagnumafpy_1_1dictproperty_1_1__proxy.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="83,-0.5 83,-30.5 227,-30.5 227,-0.5 83,-0.5"/>
 <text text-anchor="start" x="91" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">magnumafpy.dictproperty.</text>
@@ -42,9 +42,9 @@
 </a>
 </g>
 </g>
-<!-- Node82&#45;&gt;Node84 -->
+<!-- Node84&#45;&gt;Node86 -->
 <g id="edge2" class="edge">
-<title>Node82&#45;&gt;Node84</title>
+<title>Node84&#45;&gt;Node86</title>
 <path fill="none" stroke="midnightblue" d="M56.95,-31.99C64.91,-30.64 73.74,-29.14 82.74,-27.61"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="56.33,-28.54 47.06,-33.67 57.5,-35.44 56.33,-28.54"/>
 </g>

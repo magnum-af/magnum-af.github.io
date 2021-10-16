@@ -204,6 +204,7 @@ var namespacemagnumaf =
     [ "CubicAnisotropyField", "classmagnumaf_1_1CubicAnisotropyField.html", "classmagnumaf_1_1CubicAnisotropyField" ],
     [ "DemagField", "classmagnumaf_1_1DemagField.html", "classmagnumaf_1_1DemagField" ],
     [ "DemagFieldPBC", "classmagnumaf_1_1DemagFieldPBC.html", null ],
+    [ "DMI_D2d_Field", "classmagnumaf_1_1DMI__D2d__Field.html", "classmagnumaf_1_1DMI__D2d__Field" ],
     [ "DmiField", "classmagnumaf_1_1DmiField.html", "classmagnumaf_1_1DmiField" ],
     [ "ExchangeField", "classmagnumaf_1_1ExchangeField.html", "classmagnumaf_1_1ExchangeField" ],
     [ "ExchangeFieldPBC", "classmagnumaf_1_1ExchangeFieldPBC.html", "classmagnumaf_1_1ExchangeFieldPBC" ],

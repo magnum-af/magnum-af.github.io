@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -121,12 +121,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>minimize</b> (self, <a
 <tr class="separator:a3da88590b136d89d7d221576f67e341d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><pre class="fragment">The LBFGS_Minimizer object implements an Limited-memory Broyden–Fletcher–Goldfarb–Shanno (LBFGS) algorithm, minimizing a magentization configuratio with respect to the micromagnetic energy. This energy is obtained via the effective field given by the HeffTerm objects.
+<div class="textblock"><pre class="fragment">The LBFGS_Minimizer object implements an Limited-memory Broyden–Fletcher–Goldfarb–Shanno (LBFGS) algorithm, minimizing a magentization configuratio with respect to the micromagnetic energy. This energy is obtained via the effective field given by the FieldTerm objects.
 
 Parameters
 ----------
-terms : [HeffTerm]
-    List of HeffTerm objects
+terms : [FieldTerm]
+    List of FieldTerm objects
 tol : float (1e-6)
     Defines tolerance of the LBFGS algorithm
 maxiter : int (230)
@@ -138,10 +138,10 @@ Methods
 -------
 minimize(State)
     Runns the minimization algorithm
-add_terms([HeffTerm])
-    Adds a list of HeffTerm objects to the existing terms
+add_terms([FieldTerm])
+    Adds a list of FieldTerm objects to the existing terms
 delete_last_term()
-    Delets the lst HeffTerm object in the list
+    Delets the lst FieldTerm object in the list
 
 Examples
 --------

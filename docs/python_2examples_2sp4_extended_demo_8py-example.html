@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('python_2examples_2sp4_extended_demo_8p
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;args = maf.parse() <span class="comment"># perform CLI argument parsing (use -h flag for details)</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"># Physical dimensions in [m]</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;x, y, z =  5.e-7, 1.25e-7, 3.e-9</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;x, y, z = 500e-9, 125e-9, 3e-9</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"># Discretization</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;nx, ny, nz = 100, 25, 1</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('python_2examples_2sp4_extended_demo_8p
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;print(<span class="stringliteral">&quot;switching for&quot;</span>, 1e9 * dt_in_sec, <span class="stringliteral">&quot;[ns] took&quot;</span>, time.time() - timer, <span class="stringliteral">&quot;[s]&quot;</span>)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;print(<span class="stringliteral">&quot;simulating   &quot;</span>, 2e9 * dt_in_sec, <span class="stringliteral">&quot;[ns] took&quot;</span>,  time.time() - start, <span class="stringliteral">&quot;[s]&quot;</span>)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;maf.Util.plot(outputdir = args.outdir, lines = [<span class="stringliteral">&#39;u ($1 * 1e9):2 w l t &quot;&lt;mx&gt;&quot;&#39;</span>, <span class="stringliteral">&#39;u ($1 * 1e9):3 w l t &quot;&lt;my&gt;&quot;&#39;</span>, <span class="stringliteral">&#39;u ($1 * 1e9):4 w l t &quot;&lt;mz&gt;&quot;&#39;</span>])</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;maf.Util.plot(outputdir = args.outdir, lines = [<span class="stringliteral">&#39;u 1:2 w l t &quot;&lt;mx&gt;&quot;&#39;</span>, <span class="stringliteral">&#39;u 1:3 w l t &quot;&lt;my&gt;&quot;&#39;</span>, <span class="stringliteral">&#39;u 1:4 w l t &quot;&lt;mz&gt;&quot;&#39;</span>])</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

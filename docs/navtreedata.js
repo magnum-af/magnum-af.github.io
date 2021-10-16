@@ -76,9 +76,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "adaptive__runge__kutta_8hpp_source.html",
-"classmagnumaf_1_1State.html#aef1faa05ab98bdef5de588efba05b68d",
-"classmagnumafpy_1_1SparseExchangeField.html#ad00fadbd9ef23387205b3ce45e23caaa",
-"namespacemagnumaf.html#aa47d57f1c1f9d109038351fcb2711af5"
+"classmagnumaf_1_1State.html#acf87b1a7b4b81c4c422545b132649412",
+"classmagnumafpy_1_1NonequiUniaxialAnisotropyField.html#ad09283fd23c91a6e684e0d9d310bee42",
+"namespacemagnumaf.html#a79e0d8204fd8b7dbd25f0cf45708c422",
+""
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

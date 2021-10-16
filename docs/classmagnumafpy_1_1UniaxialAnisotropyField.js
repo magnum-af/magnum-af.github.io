@@ -6,6 +6,7 @@ var classmagnumafpy_1_1UniaxialAnisotropyField =
     [ "Energy_in_J", "classmagnumafpy_1_1UniaxialAnisotropyField.html#aacceb382063452d41a4e07107c559564", null ],
     [ "H_in_Apm", "classmagnumafpy_1_1UniaxialAnisotropyField.html#a0f9f35abbfa6526069c3eb49a6662240", null ],
     [ "Ku1", "classmagnumafpy_1_1UniaxialAnisotropyField.html#ab562b170103c4cc7f87e365c2338bd59", null ],
+    [ "Ku1", "classmagnumafpy_1_1UniaxialAnisotropyField.html#a802c27df447016922f5f8a4f1ad2e2c4", null ],
     [ "Ku1_axis", "classmagnumafpy_1_1UniaxialAnisotropyField.html#adb946b41c6a143f07735744f3f795c1d", null ],
     [ "Ku1_field", "classmagnumafpy_1_1UniaxialAnisotropyField.html#a9e5c7b40a115ee23c34e12064aef1eed", null ]
 ];

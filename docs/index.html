@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -141,6 +141,50 @@ Documentation</h1>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Example Simulation Scripts</h1>
 <p>Various example scripts are found in the respective directories for python in <a href="python/examples/">python/examples/</a> and for c++ in <a href="magnumaf/examples/">magnumaf/examples/</a> as well as in the html-documentation under 'Examples'.</p>
+<p>The following is an example of the python API for the standard problem 4 (full example under <a href="python/examples/sp4.py">python/examples/sp4.py</a>): </p><div class="fragment"><div class="line">import arrayfire as af</div>
+<div class="line">import magnumaf as maf</div>
+<div class="line"> </div>
+<div class="line"># physical dimensions in [m] and discretization</div>
+<div class="line">x, y, z = 500e-9, 125e-9, 3e-9</div>
+<div class="line">nx, ny, nz = 100, 25, 1</div>
+<div class="line"> </div>
+<div class="line"># initial magnetization</div>
+<div class="line">m0 = af.constant(0.0, nx, ny, nz, 3, af.Dtype.f64)</div>
+<div class="line">m0[1:nx-1, :, :, 0] = 1.0</div>
+<div class="line">m0[     0, :, :, 1] = 1.0</div>
+<div class="line">m0[    -1, :, :, 1] = 1.0</div>
+<div class="line"> </div>
+<div class="line"># creating magnum.af objects</div>
+<div class="line">mesh = maf.Mesh(nx, ny, nz, dx=x/nx, dy=y/ny, dz=z/nz)</div>
+<div class="line">state = maf.State(mesh, Ms = 8e5, m = m0)</div>
+<div class="line"> </div>
+<div class="line"># define interactions</div>
+<div class="line">dmg = maf.DemagField(mesh)</div>
+<div class="line">exc = maf.ExchangeField(A = 1.3e-11)</div>
+<div class="line"> </div>
+<div class="line"># setup integrator</div>
+<div class="line">llg = maf.LLGIntegrator(alpha = 1.0, terms = [dmg, exc])</div>
+<div class="line">outfile = open(&quot;m.dat&quot;, &quot;w&quot;)</div>
+<div class="line"> </div>
+<div class="line"># relaxing</div>
+<div class="line">while state.t &lt; 1e-9:</div>
+<div class="line">    llg.step(state)</div>
+<div class="line">    print(state, file = outfile)</div>
+<div class="line"> </div>
+<div class="line"># preparing switch</div>
+<div class="line">H_ext = af.constant(0.0, nx, ny, nz, 3, af.Dtype.f64)</div>
+<div class="line">H_ext[:, :, :, 0] = -24.6e-3/maf.Constants.mu0</div>
+<div class="line">H_ext[:, :, :, 1] = 4.3e-3/maf.Constants.mu0</div>
+<div class="line">ext = maf.ExternalField(H_ext)</div>
+<div class="line">llg.add_terms(ext)</div>
+<div class="line">llg.alpha=0.02</div>
+<div class="line"> </div>
+<div class="line"># switching</div>
+<div class="line">while state.t &lt; 2e-9:</div>
+<div class="line">    llg.step(state)</div>
+<div class="line">    print(state, file = outfile)</div>
+</div><!-- fragment --><p>Plotting the generated data yields:</p>
+<p><img src="docu/sp4_m.png" alt="docu/sp4_m.png" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Installation Guide</h1>
 <h2><a class="anchor" id="autotoc_md6"></a>

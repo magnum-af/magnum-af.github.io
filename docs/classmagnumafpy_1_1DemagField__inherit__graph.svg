@@ -20,9 +20,9 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classmagnumafpy_1_1HeffTerm.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="6.5,-56.5 6.5,-75.5 134.5,-75.5 134.5,-56.5 6.5,-56.5"/>
-<text text-anchor="middle" x="70.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">magnumafpy.HeffTerm</text>
+<g id="a_node2"><a xlink:href="classmagnumafpy_1_1FieldTerm.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="5.5,-56.5 5.5,-75.5 135.5,-75.5 135.5,-56.5 5.5,-56.5"/>
+<text text-anchor="middle" x="70.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">magnumafpy.FieldTerm</text>
 </a>
 </g>
 </g>

@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -145,8 +145,8 @@ Parameters
 ----------
 alpha : float
     The unitless damping constant in the LLG equation
-terms : [HeffTerm]
-    A python list constisting of HeffTerm objects s.a. ExchangeField or DemagField
+terms : [FieldTerm]
+    A python list constisting of FieldTerm objects s.a. ExchangeField or DemagField
 mode : str
     Switch between Adapitve Runge Kutta schemes. Options are "RKF45", "DP45", "BS45", "DP78", "BS23"
 hmin : float
@@ -173,7 +173,7 @@ Eeff_in_J(State) : float
 H_in_Apm(State) : af.array
     Returns the effective field H_in_Apm for the magnetization state.m
 add_terms(*args)
-    Adds an HeffTerm object (s.a. ExchangeField) to be included in the effective field
+    Adds an FieldTerm object (s.a. ExchangeField) to be included in the effective field
 relax(State, precision, ncalcE, nprint)
     Relaxes the magnetization until the energy difference between ncalcE steps is less than precision
 

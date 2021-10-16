@@ -28,6 +28,7 @@ var hierarchy =
       [ "magnumaf::MicroTerm", "classmagnumaf_1_1MicroTerm.html", [
         [ "magnumaf::BulkDMIExchangeField", "classmagnumaf_1_1BulkDMIExchangeField.html", null ],
         [ "magnumaf::CubicAnisotropyField", "classmagnumaf_1_1CubicAnisotropyField.html", null ],
+        [ "magnumaf::DMI_D2d_Field", "classmagnumaf_1_1DMI__D2d__Field.html", null ],
         [ "magnumaf::DemagField", "classmagnumaf_1_1DemagField.html", null ],
         [ "magnumaf::DemagFieldPBC", "classmagnumaf_1_1DemagFieldPBC.html", null ],
         [ "magnumaf::DmiField", "classmagnumaf_1_1DmiField.html", null ],
@@ -45,9 +46,7 @@ var hierarchy =
         [ "magnumaf::NonequiUniaxialAnisotropyField", "classmagnumaf_1_1NonequiUniaxialAnisotropyField.html", null ]
       ] ]
     ] ],
-    [ "magnumafpy.Geometry", "classmagnumafpy_1_1Geometry.html", null ],
-    [ "magnumaf::GradientDecent", "classmagnumaf_1_1GradientDecent.html", null ],
-    [ "magnumafpy.HeffTerm", "classmagnumafpy_1_1HeffTerm.html", [
+    [ "magnumafpy.FieldTerm", "classmagnumafpy_1_1FieldTerm.html", [
       [ "magnumafpy.AtomisticDipoleDipoleField", "classmagnumafpy_1_1AtomisticDipoleDipoleField.html", null ],
       [ "magnumafpy.AtomisticDmiField", "classmagnumafpy_1_1AtomisticDmiField.html", null ],
       [ "magnumafpy.AtomisticExchangeField", "classmagnumafpy_1_1AtomisticExchangeField.html", null ],
@@ -55,6 +54,7 @@ var hierarchy =
       [ "magnumafpy.AtomisticUniaxialAnisotropyField", "classmagnumafpy_1_1AtomisticUniaxialAnisotropyField.html", null ],
       [ "magnumafpy.BulkDMIExchangeField", "classmagnumafpy_1_1BulkDMIExchangeField.html", null ],
       [ "magnumafpy.CubicAnisotropyField", "classmagnumafpy_1_1CubicAnisotropyField.html", null ],
+      [ "magnumafpy.DMI_D2d_Field", "classmagnumafpy_1_1DMI__D2d__Field.html", null ],
       [ "magnumafpy.DemagField", "classmagnumafpy_1_1DemagField.html", null ],
       [ "magnumafpy.DemagFieldPBC", "classmagnumafpy_1_1DemagFieldPBC.html", null ],
       [ "magnumafpy.DmiField", "classmagnumafpy_1_1DmiField.html", null ],
@@ -70,6 +70,8 @@ var hierarchy =
       [ "magnumafpy.SpinTransferTorqueField", "classmagnumafpy_1_1SpinTransferTorqueField.html", null ],
       [ "magnumafpy.UniaxialAnisotropyField", "classmagnumafpy_1_1UniaxialAnisotropyField.html", null ]
     ] ],
+    [ "magnumafpy.Geometry", "classmagnumafpy_1_1Geometry.html", null ],
+    [ "magnumaf::GradientDecent", "classmagnumaf_1_1GradientDecent.html", null ],
     [ "magnumaf::util::HostPtrAccessor< T >", "classmagnumaf_1_1util_1_1HostPtrAccessor.html", null ],
     [ "magnumaf::util::HostPtrManipulator< T >", "classmagnumaf_1_1util_1_1HostPtrManipulator.html", null ],
     [ "magnumaf::util::HostRawPtrAccessor< T >", "classmagnumaf_1_1util_1_1HostRawPtrAccessor.html", null ],
