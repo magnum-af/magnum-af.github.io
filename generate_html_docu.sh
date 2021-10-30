@@ -4,8 +4,18 @@
 # update source code to newest master:
 git submodule foreach git pull origin master
 
+# backup magnum.af/README.md
+cp magnum.af/README.md magnum.af/README.md.bak
+# skip github/gitlab specific ' <\details> ' sections in magnum.af/README.md
+sed -i '/<*details>/d' magnum.af/README.md
+
+# TODO: replace soft github/gitlab links with hard github link for HTML docu
+
 # build html
 mkdir build && (cd build && cmake ../magnum.af && make docu_html)
+
+# reset magnum.af/README.md
+mv magnum.af/README.md.bak magnum.af/README.md
 
 # replace files in docs/
 mkdir tmp/ && mv docs/_config.yml tmp/ # 'stash' github generated theme file _config.yml
