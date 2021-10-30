@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('nonequi__term_8hpp_source.html',''); i
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            ms_h_times_m = state.<a class="code" href="classmagnumaf_1_1State.html#a5785357b596c00832a004c11609e8a96">Ms</a> * h_times_m;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            ;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            ms_h_times_m = state.<a class="code" href="classmagnumaf_1_1State.html#a4c7e770219326c9c5d408faef4602a4c">Ms_field</a> * h_times_m;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            ms_h_times_m = state.get_Ms_field_in_vec_dims() * h_times_m;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        af::array xy_integral = af::sum(af::sum(af::sum(ms_h_times_m, 0), 1), 3) * nemesh.dx * nemesh.<a class="code" href="structmagnumaf_1_1NonequiMesh.html#ac9ec62a9f1c61398d83923be7f2caf75">dy</a>;</div>
@@ -144,10 +144,10 @@ $(document).ready(function(){initNavTree('nonequi__term_8hpp_source.html',''); i
 <div class="ttc" id="aclassmagnumaf_1_1FieldTerm_html"><div class="ttname"><a href="classmagnumaf_1_1FieldTerm.html">magnumaf::FieldTerm</a></div><div class="ttdef"><b>Definition:</b> field_term.hpp:12</div></div>
 <div class="ttc" id="aclassmagnumaf_1_1NonequiTerm_html"><div class="ttname"><a href="classmagnumaf_1_1NonequiTerm.html">magnumaf::NonequiTerm</a></div><div class="ttdef"><b>Definition:</b> nonequi_term.hpp:8</div></div>
 <div class="ttc" id="aclassmagnumaf_1_1NonequiTerm_html_a01735bffcc5778412c7add2221ce064a"><div class="ttname"><a href="classmagnumaf_1_1NonequiTerm.html#a01735bffcc5778412c7add2221ce064a">magnumaf::NonequiTerm::impl_E_in_J</a></div><div class="ttdeci">virtual double impl_E_in_J(const State &amp;state, const af::array &amp;h) const override</div><div class="ttdoc">Energy calculation: Edemag = - mu0/2 * integral(M .</div><div class="ttdef"><b>Definition:</b> nonequi_term.hpp:19</div></div>
-<div class="ttc" id="aclassmagnumaf_1_1State_html"><div class="ttname"><a href="classmagnumaf_1_1State.html">magnumaf::State</a></div><div class="ttdef"><b>Definition:</b> state.hpp:10</div></div>
-<div class="ttc" id="aclassmagnumaf_1_1State_html_a4c7e770219326c9c5d408faef4602a4c"><div class="ttname"><a href="classmagnumaf_1_1State.html#a4c7e770219326c9c5d408faef4602a4c">magnumaf::State::Ms_field</a></div><div class="ttdeci">af::array Ms_field</div><div class="ttdoc">Inhomogeneous, mesh dependent saturation magnetization defined at every node in units of [J/T/m^3].</div><div class="ttdef"><b>Definition:</b> state.hpp:33</div></div>
-<div class="ttc" id="aclassmagnumaf_1_1State_html_a5785357b596c00832a004c11609e8a96"><div class="ttname"><a href="classmagnumaf_1_1State.html#a5785357b596c00832a004c11609e8a96">magnumaf::State::Ms</a></div><div class="ttdeci">double Ms</div><div class="ttdoc">Saturation magnetization in [J/T/m^3] or [A/m].</div><div class="ttdef"><b>Definition:</b> state.hpp:32</div></div>
-<div class="ttc" id="aclassmagnumaf_1_1State_html_a8207084184f24d02374c6904b1586467"><div class="ttname"><a href="classmagnumaf_1_1State.html#a8207084184f24d02374c6904b1586467">magnumaf::State::m</a></div><div class="ttdeci">af::array m</div><div class="ttdoc">magnetic field configuration</div><div class="ttdef"><b>Definition:</b> state.hpp:31</div></div>
+<div class="ttc" id="aclassmagnumaf_1_1State_html"><div class="ttname"><a href="classmagnumaf_1_1State.html">magnumaf::State</a></div><div class="ttdef"><b>Definition:</b> state.hpp:11</div></div>
+<div class="ttc" id="aclassmagnumaf_1_1State_html_a4c7e770219326c9c5d408faef4602a4c"><div class="ttname"><a href="classmagnumaf_1_1State.html#a4c7e770219326c9c5d408faef4602a4c">magnumaf::State::Ms_field</a></div><div class="ttdeci">af::array Ms_field</div><div class="ttdoc">Inhomogeneous, mesh dependent saturation magnetization defined at every node in units of [J/T/m^3].</div><div class="ttdef"><b>Definition:</b> state.hpp:34</div></div>
+<div class="ttc" id="aclassmagnumaf_1_1State_html_a5785357b596c00832a004c11609e8a96"><div class="ttname"><a href="classmagnumaf_1_1State.html#a5785357b596c00832a004c11609e8a96">magnumaf::State::Ms</a></div><div class="ttdeci">double Ms</div><div class="ttdoc">Saturation magnetization in [J/T/m^3] or [A/m].</div><div class="ttdef"><b>Definition:</b> state.hpp:33</div></div>
+<div class="ttc" id="aclassmagnumaf_1_1State_html_a8207084184f24d02374c6904b1586467"><div class="ttname"><a href="classmagnumaf_1_1State.html#a8207084184f24d02374c6904b1586467">magnumaf::State::m</a></div><div class="ttdeci">af::array m</div><div class="ttdoc">magnetic field configuration</div><div class="ttdef"><b>Definition:</b> state.hpp:32</div></div>
 <div class="ttc" id="anamespacemagnumaf_html"><div class="ttname"><a href="namespacemagnumaf.html">magnumaf</a></div><div class="ttdoc">C++ magnum.af library.</div><div class="ttdef"><b>Definition:</b> sp4_boost_odeint_minimal_variant.cpp:21</div></div>
 <div class="ttc" id="astructmagnumaf_1_1NonequiMesh_html"><div class="ttname"><a href="structmagnumaf_1_1NonequiMesh.html">magnumaf::NonequiMesh</a></div><div class="ttdef"><b>Definition:</b> nonequispaced_mesh.hpp:11</div></div>
 <div class="ttc" id="astructmagnumaf_1_1NonequiMesh_html_aadc818dd12790d383e03970caa40d14c"><div class="ttname"><a href="structmagnumaf_1_1NonequiMesh.html#aadc818dd12790d383e03970caa40d14c">magnumaf::NonequiMesh::z_spacing</a></div><div class="ttdeci">std::vector&lt; double &gt; z_spacing</div><div class="ttdoc">Thickness of each layer along z-axis in [m].</div><div class="ttdef"><b>Definition:</b> nonequispaced_mesh.hpp:16</div></div>

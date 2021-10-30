@@ -25,25 +25,25 @@
 var NAVTREE =
 [
   [ "magnum.af", "index.html", [
-    [ "magnum.af: A finite differences GPU-accelerated micromagnetic and atomistic simulation software", "index.html", [
-      [ "Physical Methods", "index.html#autotoc_md0", null ],
-      [ "Architecture", "index.html#autotoc_md1", null ],
-      [ "Repositories", "index.html#autotoc_md2", null ],
-      [ "Documentation", "index.html#autotoc_md3", null ],
-      [ "Example Simulation Scripts", "index.html#autotoc_md4", null ],
-      [ "Installation Guide", "index.html#autotoc_md5", [
-        [ "Docker:", "index.html#autotoc_md6", null ],
-        [ "Local installation:", "index.html#autotoc_md7", [
-          [ "GPU Driver Installation", "index.html#autotoc_md8", [
-            [ "a) NVIDIA: nvidia-driver and CUDA:", "index.html#autotoc_md9", null ],
-            [ "b) AMD: AMDGPU driver and OpenCL", "index.html#autotoc_md10", null ]
-          ] ],
-          [ "Further steps", "index.html#autotoc_md11", [
-            [ "Install Arrayfire", "index.html#autotoc_md12", null ],
-            [ "Install dependencies", "index.html#autotoc_md13", null ],
-            [ "Install Python Packages", "index.html#autotoc_md14", null ],
-            [ "Build magnum.af", "index.html#autotoc_md15", null ]
-          ] ]
+    [ "magnum.af: A finite differences GPU-accelerated micromagnetic and atomistic simulation software", "index.html#autotoc_md0", null ],
+    [ "Physical Methods", "index.html#autotoc_md1", null ],
+    [ "Software Architecture", "index.html#autotoc_md2", null ],
+    [ "Publications", "index.html#autotoc_md3", null ],
+    [ "Code Repositories", "index.html#autotoc_md4", null ],
+    [ "Documentation", "index.html#autotoc_md5", null ],
+    [ "Simulation Script Examples", "index.html#autotoc_md6", null ],
+    [ "Installation Guide", "index.html#autotoc_md7", [
+      [ "Docker:", "index.html#autotoc_md8", null ],
+      [ "Local installation:", "index.html#autotoc_md9", [
+        [ "GPU Driver Installation", "index.html#autotoc_md10", [
+          [ "a) NVIDIA: nvidia-driver and CUDA:", "index.html#autotoc_md11", null ],
+          [ "b) AMD: AMDGPU driver and OpenCL", "index.html#autotoc_md12", null ]
+        ] ],
+        [ "Further steps", "index.html#autotoc_md13", [
+          [ "Install Arrayfire", "index.html#autotoc_md14", null ],
+          [ "Install dependencies", "index.html#autotoc_md15", null ],
+          [ "Install Python Packages", "index.html#autotoc_md16", null ],
+          [ "Build <strong>magnum.af</strong>", "index.html#autotoc_md17", null ]
         ] ]
       ] ]
     ] ],
@@ -75,11 +75,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"adaptive__runge__kutta_8hpp_source.html",
-"classmagnumaf_1_1State.html#acf87b1a7b4b81c4c422545b132649412",
-"classmagnumafpy_1_1NonequiUniaxialAnisotropyField.html#ad09283fd23c91a6e684e0d9d310bee42",
-"namespacemagnumaf.html#a79e0d8204fd8b7dbd25f0cf45708c422",
-""
+"",
+"classmagnumaf_1_1State.html#a8068350d81d173de732ac31ea69b15ab",
+"classmagnumafpy_1_1NonequiMesh.html#abeebad31061cdda56bbed321db72f253",
+"namespacemagnumaf.html#a4aabb933b9a10886111140a5e2cc63bf",
+"util_8hpp.html#afa649c7178fff04a6f4047b804cf6147"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

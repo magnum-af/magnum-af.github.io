@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -144,13 +144,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a76161a9e7aec9ff468f824adda4f8652"><td class="memItemLeft" align="right" valign="top"><a id="a76161a9e7aec9ff468f824adda4f8652"></a>
 long int&#160;</td><td class="memItemRight" valign="bottom"><b>get_m_addr</b> () const</td></tr>
 <tr class="separator:a76161a9e7aec9ff468f824adda4f8652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482b588aac63f393e9882c3733c7b8e9"><td class="memItemLeft" align="right" valign="top"><a id="a482b588aac63f393e9882c3733c7b8e9"></a>
-af::array&#160;</td><td class="memItemRight" valign="bottom"><b>get_Ms_field</b> () const</td></tr>
-<tr class="separator:a482b588aac63f393e9882c3733c7b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218c07b9477b16476330ce4edf4a7e51"><td class="memItemLeft" align="right" valign="top"><a id="a218c07b9477b16476330ce4edf4a7e51"></a>
-af::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a218c07b9477b16476330ce4edf4a7e51">get_Ms_field_in_vector_dims</a> () const</td></tr>
-<tr class="memdesc:a218c07b9477b16476330ce4edf4a7e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">return Ms tiled to dims [nx, ny, nz, 3]. <br /></td></tr>
-<tr class="separator:a218c07b9477b16476330ce4edf4a7e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6243bf054fac78a0deff0d3a388bfb8e"><td class="memItemLeft" align="right" valign="top"><a id="a6243bf054fac78a0deff0d3a388bfb8e"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>get_Ms_field_in_vec_dims</b> () const</td></tr>
+<tr class="separator:a6243bf054fac78a0deff0d3a388bfb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e698c1ebde3ab9a12fadd4010eefde0"><td class="memItemLeft" align="right" valign="top"><a id="a6e698c1ebde3ab9a12fadd4010eefde0"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a6e698c1ebde3ab9a12fadd4010eefde0">get_Ms_as_field</a> () const</td></tr>
+<tr class="memdesc:a6e698c1ebde3ab9a12fadd4010eefde0"><td class="mdescLeft">&#160;</td><td class="mdescRight">return Ms as af::array. If Ms_field is not set, scalar Ms is tiled to dims [nx, ny, nz, 1]. <br /></td></tr>
+<tr class="separator:a6e698c1ebde3ab9a12fadd4010eefde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cae6e7095ae5cdad088ca9d4bda237b"><td class="memItemLeft" align="right" valign="top"><a id="a7cae6e7095ae5cdad088ca9d4bda237b"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a7cae6e7095ae5cdad088ca9d4bda237b">get_Ms_as_field_in_vector_dims</a> () const</td></tr>
+<tr class="memdesc:a7cae6e7095ae5cdad088ca9d4bda237b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return Ms tiled to dims [nx, ny, nz, 3]. <br /></td></tr>
+<tr class="separator:a7cae6e7095ae5cdad088ca9d4bda237b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106ee2f4717f80ddbc25875763c48558"><td class="memItemLeft" align="right" valign="top"><a id="a106ee2f4717f80ddbc25875763c48558"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_Ms_field</b> (long int afarray_ptr)</td></tr>
 <tr class="separator:a106ee2f4717f80ddbc25875763c48558"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,7 +230,7 @@ af::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a8207084184f24d02374c6904b1586467"><td class="mdescLeft">&#160;</td><td class="mdescRight">magnetic field configuration <br /></td></tr>
 <tr class="separator:a8207084184f24d02374c6904b1586467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5785357b596c00832a004c11609e8a96"><td class="memItemLeft" align="right" valign="top"><a id="a5785357b596c00832a004c11609e8a96"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a5785357b596c00832a004c11609e8a96">Ms</a> {0}</td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a5785357b596c00832a004c11609e8a96">Ms</a> {std::numeric_limits&lt;double&gt;::quiet_NaN()}</td></tr>
 <tr class="memdesc:a5785357b596c00832a004c11609e8a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saturation magnetization in [J/T/m^3] or [A/m]. <br /></td></tr>
 <tr class="separator:a5785357b596c00832a004c11609e8a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7e770219326c9c5d408faef4602a4c"><td class="memItemLeft" align="right" valign="top">af::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnumaf_1_1State.html#a4c7e770219326c9c5d408faef4602a4c">Ms_field</a></td></tr>
@@ -263,7 +267,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 
 <p>Inhomogeneous, mesh dependent saturation magnetization defined at every node in units of [J/T/m^3]. </p>
-<p>Is impicitly set and used when magnetization has values of norm 0. return Ms as af::array. If Ms_field is not set, scalar Ms is tiled to dims [nx, ny, nz, 1]. </p>
+<p>Is impicitly set and used when magnetization has values of norm 0. </p>
 
 </div>
 </div>

@@ -14,6 +14,7 @@ var classmagnumafpy_1_1State =
     [ "mean_my", "classmagnumafpy_1_1State.html#a877e1edc58220f91fdfacf82beb0c5f1", null ],
     [ "mean_mz", "classmagnumafpy_1_1State.html#af7768af9577616d59a3e2735fbfccc44", null ],
     [ "Ms", "classmagnumafpy_1_1State.html#a2cd5111c87ecb51a8f684090c533b75d", null ],
+    [ "Ms", "classmagnumafpy_1_1State.html#af2d1e128f425341b148d76f9ef257a72", null ],
     [ "Ms_field", "classmagnumafpy_1_1State.html#a9ed145130382641c2824b541b8fb7e1a", null ],
     [ "Ms_field", "classmagnumafpy_1_1State.html#a8356d1305845e6b9fc10b131505c9ca5", null ],
     [ "normalize", "classmagnumafpy_1_1State.html#a044e64839da399ec245cbd1a8a77b591", null ],

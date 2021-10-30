@@ -40,7 +40,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">magnum.af
-   &#160;<span id="projectnumber">1.1.0</span>
+   &#160;<span id="projectnumber">1.2.0</span>
    </div>
    <div id="projectbrief">A finite differences GPU-accelerated micromagnetic and atomistic simulation software</div>
   </td>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('namespacemagnumaf.html',''); initResiz
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -273,6 +274,14 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>Imax</b> = <a class=
 using&#160;</td><td class="memItemRight" valign="bottom"><b>EpsilonFactor</b> = <a class="el" href="classmagnumaf_1_1NamedType.html">NamedType</a>&lt; double, struct NamedTypeEpsilonFactor &gt;</td></tr>
 <tr class="separator:a1b8b8c3dd6b4475d70d2e3b97592ef1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:afcf1c101407385153980ba0b754a5f50"><td class="memItemLeft" align="right" valign="top"><a id="afcf1c101407385153980ba0b754a5f50"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>BC</b> { <b>periodic</b>
+, <b>neumann</b>
+, <b>open</b>
+ }</td></tr>
+<tr class="separator:afcf1c101407385153980ba0b754a5f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a97f9ba5bf3e000f210ce6ecf86838ec9"><td class="memTemplParams" colspan="2"><a id="a97f9ba5bf3e000f210ce6ecf86838ec9"></a>
@@ -402,6 +411,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_boundary_condit
 <tr class="memitem:a3af8a3e24296b2f8fcbf01bd92adee07"><td class="memItemLeft" align="right" valign="top"><a id="a3af8a3e24296b2f8fcbf01bd92adee07"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>correct_edges</b> (af::array &amp;out, const af::array &amp;in, <a class="el" href="structmagnumaf_1_1Mesh.html">Mesh</a> mesh)</td></tr>
 <tr class="separator:a3af8a3e24296b2f8fcbf01bd92adee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff865b89bf86a52ed49488e24e84e59"><td class="memItemLeft" align="right" valign="top"><a id="a2ff865b89bf86a52ed49488e24e84e59"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>h_withedges</b> (double A, const <a class="el" href="classmagnumaf_1_1State.html">State</a> &amp;state)</td></tr>
+<tr class="separator:a2ff865b89bf86a52ed49488e24e84e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b93dd924708793e08e2301beba0e9b0"><td class="memItemLeft" align="right" valign="top"><a id="a7b93dd924708793e08e2301beba0e9b0"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>_shift_impl_exchange_H_in_Apm</b> (double Aex, const <a class="el" href="classmagnumaf_1_1State.html">State</a> &amp;state, BC bc)</td></tr>
+<tr class="separator:a7b93dd924708793e08e2301beba0e9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0c7816c648c752509f038627abc75f"><td class="memItemLeft" align="right" valign="top"><a id="a4c0c7816c648c752509f038627abc75f"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>_convolve_old_impl_exchange_H_in_Apm</b> (double A, const <a class="el" href="classmagnumaf_1_1State.html">State</a> &amp;state)</td></tr>
+<tr class="separator:a4c0c7816c648c752509f038627abc75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3210c71b852e59fa938e392c4222cdf1"><td class="memItemLeft" align="right" valign="top"><a id="a3210c71b852e59fa938e392c4222cdf1"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>_convolve_lap_impl_exchange_H_in_Apm</b> (double A, const <a class="el" href="classmagnumaf_1_1State.html">State</a> &amp;state)</td></tr>
+<tr class="separator:a3210c71b852e59fa938e392c4222cdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb97a091587cf93f38827c345ba2bb6"><td class="memItemLeft" align="right" valign="top"><a id="abeb97a091587cf93f38827c345ba2bb6"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>findex</b> (std::size_t i0, std::size_t i1, std::size_t i2, std::size_t im, const <a class="el" href="structmagnumaf_1_1Mesh.html">Mesh</a> &amp;mesh)</td></tr>
 <tr class="separator:abeb97a091587cf93f38827c345ba2bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,6 +521,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_plotfile</b> (c
 <tr class="memitem:abe135ef1d9ff8a441b04ef705d32dd28"><td class="memItemLeft" align="right" valign="top"><a id="abe135ef1d9ff8a441b04ef705d32dd28"></a>
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os, const <a class="el" href="classmagnumaf_1_1State.html">State</a> &amp;state)</td></tr>
 <tr class="separator:abe135ef1d9ff8a441b04ef705d32dd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a218c220788d2ef2b96e10446f5f5f3eb"><td class="memItemLeft" align="right" valign="top"><a id="a218c220788d2ef2b96e10446f5f5f3eb"></a>
+af::array&#160;</td><td class="memItemRight" valign="bottom"><b>check_Ms_field_dims</b> (af::array Ms_field)</td></tr>
+<tr class="separator:a218c220788d2ef2b96e10446f5f5f3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2261cb2888ce4cd933423044b0fa0429"><td class="memItemLeft" align="right" valign="top"><a id="a2261cb2888ce4cd933423044b0fa0429"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>colum_major_stride</b> (const unsigned i, const unsigned j, const unsigned k, const unsigned l, const unsigned ni, const unsigned nj, const unsigned nk)</td></tr>
 <tr class="separator:a2261cb2888ce4cd933423044b0fa0429"><td class="memSeparator" colspan="2">&#160;</td></tr>
