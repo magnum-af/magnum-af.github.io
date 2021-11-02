@@ -5,17 +5,25 @@
 git submodule foreach git pull origin master
 
 # backup magnum.af/README.md
-cp magnum.af/README.md magnum.af/README.md.bak
+cp magnum.af/README.md README.md.bak
+
 # skip github/gitlab specific ' <\details> ' sections in magnum.af/README.md
 sed -i '/<*details>/d' magnum.af/README.md
 
-# TODO: replace soft github/gitlab links with hard github link for HTML docu
+# replace soft github/gitlab links with hard github link for HTML docu
+github_hard_link_prefix='https://github.com/magnum-af/magnum.af/blob/master/'
+link_replace_patterns=('magnumaf' 'python' 'Dockerfile')
+for pattern in "${link_replace_patterns[@]}"; do
+    # append prefix to all links containing the listed patterns above ( matching the link pattern [.*](<pattern>.*) )
+    sed -i '/\[.*\]('"$pattern"'.*)/ { s%'"$pattern"'/*%'"$github_hard_link_prefix"'&%g; }' magnum.af/README.md
+done
 
 # build html
 mkdir build && (cd build && cmake ../magnum.af && make docu_html)
 
 # reset magnum.af/README.md
-mv magnum.af/README.md.bak magnum.af/README.md
+cp magnum.af/README.md edited_README.md # retain copy of modified file
+mv README.md.bak magnum.af/README.md # reset original file for clean git submodule
 
 # replace files in docs/
 mkdir tmp/ && mv docs/_config.yml tmp/ # 'stash' github generated theme file _config.yml
