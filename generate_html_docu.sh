@@ -12,7 +12,7 @@ sed -i '/<*details>/d' magnum.af/README.md
 
 # replace soft github/gitlab links with hard github link for HTML docu
 github_hard_link_prefix='https://github.com/magnum-af/magnum.af/blob/master/'
-link_replace_patterns=('magnumaf' 'python' 'Dockerfile')
+link_replace_patterns=('magnumaf\/' 'python\/' 'Dockerfile')
 for pattern in "${link_replace_patterns[@]}"; do
     # append prefix to all links containing the listed patterns above ( matching the link pattern [.*](<pattern>.*) )
     sed -i '/\[.*\]('"$pattern"'.*)/ { s%'"$pattern"'/*%'"$github_hard_link_prefix"'&%g; }' magnum.af/README.md
@@ -22,7 +22,7 @@ done
 mkdir build && (cd build && cmake ../magnum.af && make docu_html)
 
 # reset magnum.af/README.md
-cp magnum.af/README.md edited_README.md # retain copy of modified file
+diff magnum.af/README.md README.md.bak || true # check replacement diff (true to avoid -e abort)
 mv README.md.bak magnum.af/README.md # reset original file for clean git submodule
 
 # replace files in docs/
